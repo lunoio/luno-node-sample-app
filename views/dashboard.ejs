@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+  <h1>Hi, <%= user.first_name || user.name || user.email ||
+    'there' %></h1>
+
+  <p>You signed up at <em><%= new Date(user.created).toUTCString() %></em>.</p>
+
+  <a href="/logout">Log out</a>
+</body>
+</html>

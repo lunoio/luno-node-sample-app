@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+  <h1><%= title %></h1>
+
+  <% if (typeof error === 'string') { %>
+  <p><%= error %></p>
+  <% } %>
+
+  <form method="POST">
+    <label>
+      <span>Email</span>
+      <input type="email" name="email">
+    </label>
+    <label>
+      <span>Password</span>
+      <input type="password" name="password">
+    </label>
+
+    <input type="hidden" name="csrf-<%= csrf.name %>" value="<%= csrf.token %>">
+    <input type="submit">
+  </form>
+
+  <a href="/signup">Signup</a>
+</body>
+</html>

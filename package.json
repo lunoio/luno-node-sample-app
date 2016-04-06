@@ -1,0 +1,33 @@
+{
+  "name": "luno-node-sample-app",
+  "version": "1.0.0",
+  "description": "Sample application using Luno with Express",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lunoio/luno-node-sample-app.git"
+  },
+  "keywords": [
+    "Luno",
+    "API",
+    "Express",
+    "Sample"
+  ],
+  "author": "Simon Tabor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lunoio/luno-node-sample-app/issues"
+  },
+  "homepage": "https://github.com/lunoio/luno-node-sample-app#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "luno": "^1.0.5",
+    "luno-csrf": "^1.0.1"
+  }
+}
